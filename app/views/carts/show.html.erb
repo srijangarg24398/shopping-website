@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @cart.user %>
+</p>
+
+<p>
+  <strong>Subtotal price:</strong>
+  <%= @cart.subtotal_price %>
+</p>
+
+<p>
+  <strong>Total price:</strong>
+  <%= @cart.total_price %>
+</p>
+
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %>
